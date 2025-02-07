@@ -1,0 +1,9 @@
+{
+    "kv_server_1": "./kv_server.js",
+    "kv_server_2": "./kv_server.js",
+    "kv_server_3": "./kv_server.js",
+    "kv_server_4": "./kv_server.js",
+    "kv_server_5": "./kv_server.js",
+    "kv_server_6": "./kv_server.js",
+    "kv_client": "./kv_client.js"
+}
