@@ -35,19 +35,21 @@ This concludes the overview. Details follow.
 ## Running the python examples 
 
 
-     $ PYTHONPATH=$PWD/examples/python
-     $ PATH="$PWD:$PATH"
+     $ export PYTHONPATH=$PWD/examples/python
+     $ export PATH="$PWD:$PATH"
      $ cd examples/python/echo
-     $ distill.py -start echo_client
+     $ distill.py --start echo_client
 
 ## Running the Java examples
 The java examples need the org.json package in the classpath. 
 
      $ cd examples/java
-     $ CLASSPATH=$PWD/examples/java/target/classes:$HOME/.m2/repository/org/json/json/20231013/json-20231013.jar
+     $ export CLASSPATH=$PWD/examples/java/target/classes:$HOME/.m2/repository/org/json/json/20231013/json-20231013.jar
      $ mvn compile 
      $ cd echo
-     $ distill.py -start 'client|server'
+     $ distill.py --start '.*'
+
+   The --start pattern matches all ids, so it starts both client and server at the same time.  
 
 
 ## Command line arguments to distill
